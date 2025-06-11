@@ -1,6 +1,7 @@
 require("config.lazy")
 vim.lsp.enable('clangd')
 vim.cmd("colorscheme zet")
+vim.opt.clipboard = "unnamedplus"
 
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
