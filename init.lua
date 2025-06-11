@@ -11,7 +11,7 @@ vim.wo.number = true
 
 require('lualine').setup {
   options = {
-    theme = 'auto',  
+    theme = 'zet',  
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
   },
