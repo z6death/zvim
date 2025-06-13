@@ -2,6 +2,8 @@ require("config.lazy")
 vim.lsp.enable('clangd')
 vim.cmd("colorscheme zet")
 vim.opt.clipboard = "unnamedplus"
+vim.o.laststatus = 3
+
 
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
@@ -12,6 +14,7 @@ vim.wo.number = true
 require('lualine').setup {
   options = {
     theme = 'zet',  
+--    globalstatus = true,
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
   },
