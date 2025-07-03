@@ -9,6 +9,20 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4        
 vim.opt.softtabstop = 4
 
+vim.g.mapleader = " "
+vim.wo.number = true
+
+vim.api.nvim_set_keymap('n', '<Esc>', ':q<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Esc>', '<Esc>:q<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Esc>', '<Esc>:q<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<Esc>', ':confirm q<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Esc>', '<Esc>:confirm q<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('i', '<F13>', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<F13>', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<F13>', '<Esc>', { noremap = true, silent = true })
+
 require("telescope").load_extension("session-lens")
 
 require("telescope").setup({
@@ -24,9 +38,6 @@ require("telescope").setup({
 
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
-
-vim.g.mapleader = " "
-vim.wo.number = true
 
 require('lualine').setup {
   options = {
