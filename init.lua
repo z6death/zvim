@@ -12,12 +12,12 @@ vim.opt.softtabstop = 4
 vim.g.mapleader = " "
 vim.wo.number = true
 
-vim.api.nvim_set_keymap('n', '<Esc>', ':q<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<Esc>', '<Esc>:q<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<Esc>', '<Esc>:q<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<Esc>', ':q<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('i', '<Esc>', '<Esc>:q<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('v', '<Esc>', '<Esc>:q<CR>', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap('n', '<Esc>', ':confirm q<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<Esc>', '<Esc>:confirm q<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<Esc>', ':confirm q<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('i', '<Esc>', '<Esc>:confirm q<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('i', '<F13>', '<Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<F13>', '<Esc>', { noremap = true, silent = true })
