@@ -19,6 +19,13 @@ vim.wo.number = true
 --vim.api.nvim_set_keymap('n', '<Esc>', ':confirm q<CR>', { noremap = true, silent = true })
 --vim.api.nvim_set_keymap('i', '<Esc>', '<Esc>:confirm q<CR>', { noremap = true, silent = true })
 
+-- Completely disable Escape key in all modes
+vim.api.nvim_set_keymap('n', '<Esc>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Esc>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Esc>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('c', '<Esc>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<Esc>', '<Nop>', { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap('i', '<F13>', '<Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<F13>', '<Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<F13>', '<Esc>', { noremap = true, silent = true })
